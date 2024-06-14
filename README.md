@@ -1,16 +1,22 @@
-# Roman numerals kata in Python
+# Kata des chiffres romains en Python
 
-## Overview
+## Pour commencer
 
-This repository contains two exercises designed to improve your skills in
-test-driven development.
+Cliquez sur le bouton ci-dessous pour démarrer un nouvel environnement de développement :
+
+[![Ouvrir dans Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/maxds-lyon/Kata-RomanNumerals-Python.git)
+
+## Aperçu
+
+Ce dépôt contient deux exercices conçus pour améliorer vos compétences en
+développement piloté par les tests.
 
 ## Instructions
 
-Roman numerals are a numeral system that was used by ancient Rome. Numbers in 
-this system use letters from the Latin alphabet. Currently, it uses seven symbols:
+Les chiffres romains sont un système numérique qui était utilisé par l'ancienne Rome. Les nombres dans 
+ce système utilisent des lettres de l'alphabet latin. Actuellement, il utilise sept symboles :
 
-| Symbol | Value |
+| Symbole | Valeur |
 |:-------|-------|
 | I      | 1     |
 | V      | 5     |
@@ -20,55 +26,43 @@ this system use letters from the Latin alphabet. Currently, it uses seven symbol
 | D      | 500   |
 | M      | 1000  |
 
-Instead of writing the same letter four times, a rule for subtraction is used:
-the letter is written once, then the next largest Roman numeral is written.
-For example, 4 is not written as IIII, but instead as IV, because IV is V (5)
-minus I (1).
+Au lieu d'écrire la même lettre quatre fois, une règle de soustraction est utilisée :
+la lettre est écrite une fois, puis le prochain chiffre romain le plus grand est écrit.
+Par exemple, 4 n'est pas écrit comme IIII, mais plutôt comme IV, car IV est V (5)
+moins I (1).
 
-In general, the values for 5, 50, and 500 are not subtracted.
+En général, les valeurs pour 5, 50 et 500 ne sont pas soustraites.
 
-### Exercise 1
+### Exercice 1
 
-The task at hand entails crafting a function `to_roman(number: int) -> str` to
-convert regular Arabic numbers into Roman numerals, such as:
+La tâche à accomplir consiste à créer une fonction `to_roman(number: int) -> str` pour
+convertir les nombres arabes ordinaires en chiffres romains, tels que :
 
 * 4 → IV
 * 7 → VII
 * 9 → IX
 
-The lowest number you can write in Roman Numerals is number I (1). And the
-largest numeral is MMMCMXCIX (3999).
+Le plus petit nombre que vous pouvez écrire en chiffres romains est le nombre I (1). Et le
+plus grand chiffre est MMMCMXCIX (3999).
 
-### Exercise 2
+### Exercice 2
 
-In this phase, the objective is to develop a function `from_roman(number: str)
--> int` that performs the reverse conversion, transforming Roman numerals into
-their corresponding Arabic digits.
+Dans cette phase, l'objectif est de développer une fonction `from_roman(number: str)
+-> int` qui effectue la conversion inverse, transformant les chiffres romains en
+leurs chiffres arabes correspondants.
 
-## Guiding Principles
+## Principes directeurs
 
-* If you don't know an existing algorithm, follow the principles of strict
-  Test-Driven Development (TDD) to derive one.
-* Reflect on whether the sequence in which you write tests influences the final
-  design of your algorithm.
-* Consider whether it's more beneficial to devise an algorithm before embarking
-  on TDD, especially if you don't already know one.
-* If you do know an algorithm, evaluate if it can be implemented using strict
-  TDD principles.
+* Si vous ne connaissez pas un algorithme existant, suivez les principes stricts
+  du développement piloté par les tests (TDD) pour en dériver un.
+* Réfléchissez à savoir si la séquence dans laquelle vous écrivez les tests influence la finalité
+  conception de votre algorithme.
+* Considérez s'il est plus bénéfique de concevoir un algorithme avant de se lancer
+  sur le TDD, surtout si vous n'en connaissez pas déjà un.
+* Si vous connaissez un algorithme, évaluez s'il peut être mis en œuvre en utilisant des principes stricts
+  du TDD.
 
-### Prerequisites
+### Prérequis
 
 * [Python 3.8+](https://www.python.org/)
 * [pytest](https://pytest.org)
-
-### Run main
-
-```console
-make run
-```
-
-### Run tests
-
-```console
-make test
-```
